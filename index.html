@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --bg: #f5f4f0;
     --surface: #ffffff;
@@ -34,7 +34,7 @@
     --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
     --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
   }
- 
+
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -43,7 +43,7 @@
     font-size: 14px;
     line-height: 1.5;
   }
- 
+
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -56,7 +56,7 @@
     top: 0;
     z-index: 10;
   }
- 
+
   .logo {
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
     font-size: 15px;
     color: var(--text);
   }
- 
+
   .logo-icon {
     width: 28px;
     height: 28px;
@@ -77,13 +77,13 @@
     color: white;
     font-size: 14px;
   }
- 
+
   .header-right {
     display: flex;
     align-items: center;
     gap: 10px;
   }
- 
+
   .status-pill {
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@
     border-radius: 20px;
     border: 1px solid var(--border);
   }
- 
+
   .dot {
     width: 6px;
     height: 6px;
@@ -106,34 +106,34 @@
   .dot-green { background: #22c55e; }
   .dot-red { background: #ef4444; }
   .dot-amber { background: #f59e0b; }
- 
+
   main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
- 
+
   .page-header {
     margin-bottom: 1.5rem;
   }
- 
+
   .page-title {
     font-size: 22px;
     font-weight: 500;
     color: var(--text);
     margin-bottom: 2px;
   }
- 
+
   .page-sub {
     font-size: 13px;
     color: var(--text-muted);
   }
- 
+
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     margin-bottom: 1.5rem;
   }
- 
+
   @media (max-width: 700px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
- 
+
   .stat-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -141,7 +141,7 @@
     padding: 1rem 1.25rem;
     box-shadow: var(--shadow);
   }
- 
+
   .stat-label {
     font-size: 11px;
     color: var(--text-muted);
@@ -149,14 +149,14 @@
     letter-spacing: 0.05em;
     margin-bottom: 6px;
   }
- 
+
   .stat-value {
     font-size: 26px;
     font-weight: 500;
     color: var(--text);
     font-family: 'DM Mono', monospace;
   }
- 
+
   .toolbar {
     display: flex;
     gap: 10px;
@@ -164,13 +164,13 @@
     flex-wrap: wrap;
     align-items: center;
   }
- 
+
   .search-wrap {
     position: relative;
     flex: 1;
     min-width: 200px;
   }
- 
+
   .search-wrap svg {
     position: absolute;
     left: 10px;
@@ -179,7 +179,7 @@
     color: var(--text-faint);
     pointer-events: none;
   }
- 
+
   input[type="text"], input[type="date"], select {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
@@ -192,16 +192,16 @@
     transition: border-color 0.15s;
     height: 36px;
   }
- 
+
   input[type="text"]:focus, input[type="date"]:focus, select:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(45,90,61,0.08);
   }
- 
+
   #search { padding-left: 32px; width: 100%; }
- 
+
   select { cursor: pointer; }
- 
+
   .btn {
     display: inline-flex;
     align-items: center;
@@ -219,30 +219,30 @@
     transition: background 0.12s, border-color 0.12s;
     white-space: nowrap;
   }
- 
+
   .btn:hover { background: var(--surface2); }
   .btn:disabled { opacity: 0.5; cursor: not-allowed; }
- 
+
   .btn-primary {
     background: var(--accent);
     color: white;
     border-color: var(--accent);
   }
   .btn-primary:hover { background: #245033; border-color: #245033; }
- 
+
   .btn-sm {
     padding: 4px 10px;
     font-size: 12px;
     height: 28px;
   }
- 
+
   .btn-danger {
     background: var(--danger-bg);
     color: var(--danger);
     border-color: rgba(155,44,44,0.2);
   }
   .btn-danger:hover { background: #fee2e2; }
- 
+
   .table-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -250,16 +250,16 @@
     box-shadow: var(--shadow);
     overflow: hidden;
   }
- 
+
   .table-wrap { overflow-x: auto; }
- 
+
   table {
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
     min-width: 860px;
   }
- 
+
   th {
     padding: 10px 14px;
     text-align: left;
@@ -274,19 +274,19 @@
     user-select: none;
     white-space: nowrap;
   }
- 
+
   th:hover { color: var(--text); }
- 
+
   td {
     padding: 10px 14px;
     border-bottom: 1px solid var(--border);
     color: var(--text);
     vertical-align: middle;
   }
- 
+
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: var(--surface2); }
- 
+
   .badge {
     display: inline-block;
     font-size: 11px;
@@ -295,7 +295,7 @@
     border-radius: 20px;
     white-space: nowrap;
   }
- 
+
   .b-attente   { background: #f3f4f6; color: #374151; }
   .b-envoye    { background: var(--blue-bg); color: var(--blue); }
   .b-relance   { background: var(--amber-bg); color: var(--amber); }
@@ -303,7 +303,7 @@
   .b-accepte   { background: #dcfce7; color: #166534; }
   .b-refus     { background: var(--danger-bg); color: var(--danger); }
   .b-contrat   { background: var(--purple-bg); color: var(--purple); font-size: 10px; }
- 
+
   .trunc {
     max-width: 140px;
     overflow: hidden;
@@ -312,7 +312,7 @@
     display: inline-block;
     vertical-align: middle;
   }
- 
+
   .icon-btn {
     background: none;
     border: none;
@@ -326,9 +326,9 @@
   }
   .icon-btn:hover { background: var(--surface2); color: var(--text); }
   .icon-btn.del:hover { background: var(--danger-bg); color: var(--danger); }
- 
+
   .confirm-row td { background: var(--danger-bg) !important; }
- 
+
   .confirm-actions {
     display: flex;
     align-items: center;
@@ -337,20 +337,20 @@
     color: var(--danger);
     font-weight: 500;
   }
- 
+
   .empty-state {
     text-align: center;
     padding: 3rem 1rem;
     color: var(--text-muted);
   }
- 
+
   .empty-state svg { margin-bottom: 12px; opacity: 0.3; }
- 
+
   .empty-state p { font-size: 14px; }
- 
+
   .sa { margin-left: 4px; opacity: 0.35; }
   th.active .sa { opacity: 1; }
- 
+
   /* Modal */
   .modal-overlay {
     display: none;
@@ -363,7 +363,7 @@
     backdrop-filter: blur(2px);
   }
   .modal-overlay.open { display: flex; }
- 
+
   .modal {
     background: var(--surface);
     border-radius: var(--radius);
@@ -375,16 +375,16 @@
     max-height: 90vh;
     overflow-y: auto;
   }
- 
+
   .modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.25rem;
   }
- 
+
   .modal-title { font-size: 16px; font-weight: 500; }
- 
+
   .modal-close {
     background: none;
     border: none;
@@ -395,7 +395,7 @@
     padding: 2px;
   }
   .modal-close:hover { color: var(--text); }
- 
+
   .form-section {
     font-size: 11px;
     font-weight: 500;
@@ -406,9 +406,9 @@
     padding-bottom: 5px;
     border-bottom: 1px solid var(--border);
   }
- 
+
   .form-row { margin-bottom: 12px; }
- 
+
   .form-row label {
     display: block;
     font-size: 12px;
@@ -416,11 +416,11 @@
     color: var(--text-muted);
     margin-bottom: 4px;
   }
- 
+
   .form-row input, .form-row select { width: 100%; }
- 
+
   .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
- 
+
   .modal-footer {
     display: flex;
     gap: 8px;
@@ -429,13 +429,13 @@
     padding-top: 1rem;
     border-top: 1px solid var(--border);
   }
- 
+
   .link-icon { color: var(--accent); font-size: 16px; text-decoration: none; }
   .link-icon:hover { opacity: 0.7; }
- 
+
   .spin { display: inline-block; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
- 
+
   @media (max-width: 600px) {
     main { padding: 1rem; }
     header { padding: 0 1rem; }
@@ -445,7 +445,7 @@
 </style>
 </head>
 <body>
- 
+
 <header>
   <div class="logo">
     <div class="logo-icon">✦</div>
@@ -462,15 +462,15 @@
     </button>
   </div>
 </header>
- 
+
 <main>
   <div class="page-header">
     <h1 class="page-title">Mes candidatures</h1>
     <p class="page-sub">Connecté à Google Sheets — toutes les modifications sont sauvegardées automatiquement</p>
   </div>
- 
+
   <div class="stats-grid" id="stats"></div>
- 
+
   <div class="toolbar">
     <div class="search-wrap">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -497,7 +497,7 @@
       Ajouter
     </button>
   </div>
- 
+
   <div class="table-card">
     <div class="table-wrap">
       <table>
@@ -520,7 +520,7 @@
     </div>
   </div>
 </main>
- 
+
 <!-- Modal -->
 <div class="modal-overlay" id="modal">
   <div class="modal">
@@ -528,7 +528,7 @@
       <span class="modal-title" id="modal-title">Nouvelle candidature</span>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
- 
+
     <div class="form-section">Entreprise</div>
     <div class="form-grid">
       <div class="form-row"><label>Entreprise *</label><input id="f-entreprise" type="text" placeholder="Nom de l'entreprise"></div>
@@ -540,7 +540,7 @@
       </div>
       <div class="form-row"><label>Lien de l'offre</label><input id="f-lien" type="text" placeholder="https://…"></div>
     </div>
- 
+
     <div class="form-section">Candidature</div>
     <div class="form-row"><label>Poste visé *</label><input id="f-poste" type="text" placeholder="Ex: Chargé de communication digital"></div>
     <div class="form-grid">
@@ -552,104 +552,86 @@
         </select>
       </div>
     </div>
- 
+
     <div class="form-section">Infos complémentaires</div>
     <div class="form-row"><label>Contact (nom / email)</label><input id="f-contact" type="text" placeholder="Ex: Marie Dupont — m.dupont@…"></div>
     <div class="form-row"><label>Note</label><input id="f-note" type="text" placeholder="Remarques, suites…"></div>
- 
+
     <div class="modal-footer">
       <button class="btn" onclick="closeModal()">Annuler</button>
       <button class="btn btn-primary" onclick="saveEntry()">Enregistrer</button>
     </div>
   </div>
 </div>
- 
 <script>
-const API_KEY  = 'AIzaSyDif9oAg1mvNf7lODO2oZM_bB5lXdZd5XU';
-const SHEET_ID = '1jqiH78wPEYYSUTcZvOM3XnEsf9ReJ6FB-kbJh4wOVHk';
-const TAB      = 'Candidatures';
-const COLS     = ['entreprise','poste','ville','contrat','date','statut','contact','lien','note'];
- 
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxfdcPtmb4w-6OQBVu51gpR4YcWND8ns-7pEjSELMj-DRLH-gVK9Hr2JU49HEd7VcFyIA/exec';
+const COLS = ['entreprise','poste','ville','contrat','date','statut','contact','lien','note'];
+
 let data = [], nextId = 1, sortCol = 'date', sortDir = -1, editId = null, pendingDeleteId = null;
- 
 const statusClass = { "Envoyé":"b-envoye","Relancé":"b-relance","Entretien":"b-entretien","Refus":"b-refus","Accepté":"b-accepte","En attente":"b-attente" };
- 
+
 function setStatus(color, msg) {
   document.getElementById('status-dot').className = 'dot dot-' + color;
   document.getElementById('status-msg').textContent = msg;
 }
- 
+
 function setSyncBtn(loading) {
   const btn = document.getElementById('sync-btn');
   btn.disabled = loading;
   btn.innerHTML = loading
-    ? '<svg class="spin" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg> En cours…'
+    ? '<svg class="spin" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg> En cours...'
     : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg> Synchroniser';
 }
- 
-function apiUrl(path, extra='') {
-  return `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}${path}?key=${API_KEY}${extra}`;
+
+async function gasGet() {
+  const res = await fetch(GAS_URL);
+  if (!res.ok) throw new Error('Erreur lecture ' + res.status);
+  return res.json();
 }
- 
-async function ensureHeader() {
-  const res = await fetch(apiUrl(`/values/${TAB}!A1:I1`));
-  if (!res.ok) {
-    const err = await res.json().catch(()=>({}));
-    if (res.status === 403) throw new Error('Accès refusé — partage le Sheet en mode Éditeur (lien public)');
-    if (res.status === 404) throw new Error('Onglet "Candidatures" introuvable — crée un onglet avec ce nom exact');
-    throw new Error(err?.error?.message || 'Erreur ' + res.status);
-  }
-  const json = await res.json();
-  if (!json.values || !json.values[0] || json.values[0][0] !== 'entreprise') {
-    await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${TAB}!A1:I1?valueInputOption=RAW&key=${API_KEY}`, {
-      method: 'PUT', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ values: [COLS] })
-    });
-  }
+
+async function gasPost(payload) {
+  const res = await fetch(GAS_URL, { method: 'POST', body: JSON.stringify(payload) });
+  if (!res.ok) throw new Error('Erreur ecriture ' + res.status);
+  return res.json();
 }
- 
+
 async function fetchRows() {
-  const res = await fetch(apiUrl(`/values/${TAB}!A2:I1000`));
-  if (!res.ok) throw new Error('Impossible de lire les données');
-  const json = await res.json();
+  const json = await gasGet();
   data = []; nextId = 1;
-  (json.values || []).forEach((row, i) => {
-    if (!row[0]) return;
-    data.push({ id: i+1, entreprise:row[0]||'', poste:row[1]||'', ville:row[2]||'', contrat:row[3]||'', date:row[4]||'', statut:row[5]||'En attente', contact:row[6]||'', lien:row[7]||'', note:row[8]||'' });
-    nextId = i + 2;
-  });
+  const rows = json.values || [];
+  for (let i = 1; i < rows.length; i++) {
+    const row = rows[i];
+    if (!row[0]) continue;
+    data.push({ id: i, entreprise:row[0]||'', poste:row[1]||'', ville:row[2]||'', contrat:row[3]||'', date:row[4]||'', statut:row[5]||'En attente', contact:row[6]||'', lien:row[7]||'', note:row[8]||'' });
+    nextId = i + 1;
+  }
   render();
 }
- 
+
 async function writeAllRows() {
   const rows = data.map(r => COLS.map(c => r[c]||''));
-  await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${TAB}!A2:I1000:clear?key=${API_KEY}`, { method: 'POST' });
-  if (!rows.length) return;
-  await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${TAB}!A2:I${rows.length+1}?valueInputOption=RAW&key=${API_KEY}`, {
-    method: 'PUT', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ values: rows })
-  });
-  setStatus('green', 'Synchronisé — ' + new Date().toLocaleTimeString('fr-FR'));
+  await gasPost({ action: 'write', rows });
+  setStatus('green', 'Synchronise -- ' + new Date().toLocaleTimeString('fr-FR'));
 }
- 
+
 async function syncAll() {
   setSyncBtn(true);
-  setStatus('amber', 'Connexion…');
+  setStatus('amber', 'Connexion...');
   try {
-    await ensureHeader();
+    await gasPost({ action: 'init' });
     await fetchRows();
-    setStatus('green', 'Synchronisé — ' + new Date().toLocaleTimeString('fr-FR'));
+    setStatus('green', 'Synchronise -- ' + new Date().toLocaleTimeString('fr-FR'));
   } catch(e) {
     setStatus('red', e.message || 'Erreur de connexion');
   }
   setSyncBtn(false);
 }
- 
+
 function sortBy(col) {
   if (sortCol===col) sortDir*=-1; else { sortCol=col; sortDir=1; }
   render();
 }
- 
+
 function filtered() {
   const q = document.getElementById('search').value.toLowerCase();
   const fs = document.getElementById('filterStatus').value;
@@ -662,108 +644,105 @@ function filtered() {
     return va<vb?-sortDir:va>vb?sortDir:0;
   });
 }
- 
+
 function renderStats() {
   const c = {total:data.length,entretien:0,accepte:0,refus:0,encours:0};
   data.forEach(r => {
     if(r.statut==="Entretien") c.entretien++;
-    else if(r.statut==="Accepté") c.accepte++;
+    else if(r.statut==="Accepte") c.accepte++;
     else if(r.statut==="Refus") c.refus++;
     else c.encours++;
   });
-  document.getElementById('stats').innerHTML = `
-    <div class="stat-card"><div class="stat-label">Total</div><div class="stat-value">${c.total}</div></div>
-    <div class="stat-card"><div class="stat-label">En cours</div><div class="stat-value">${c.encours}</div></div>
-    <div class="stat-card"><div class="stat-label">Entretiens</div><div class="stat-value">${c.entretien}</div></div>
-    <div class="stat-card"><div class="stat-label">Acceptées</div><div class="stat-value">${c.accepte}</div></div>
-    <div class="stat-card"><div class="stat-label">Refus</div><div class="stat-value">${c.refus}</div></div>`;
+  document.getElementById('stats').innerHTML =
+    '<div class="stat-card"><div class="stat-label">Total</div><div class="stat-value">' + c.total + '</div></div>' +
+    '<div class="stat-card"><div class="stat-label">En cours</div><div class="stat-value">' + c.encours + '</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Entretiens</div><div class="stat-value">' + c.entretien + '</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Acceptees</div><div class="stat-value">' + c.accepte + '</div></div>' +
+    '<div class="stat-card"><div class="stat-label">Refus</div><div class="stat-value">' + c.refus + '</div></div>';
 }
- 
+
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 function render() {
   renderStats();
   const rows = filtered();
-  document.querySelectorAll('th[data-col]').forEach(th => {
+  document.querySelectorAll('th[data-col]').forEach(function(th) {
     th.classList.toggle('active', th.dataset.col===sortCol);
-    th.querySelector('.sa').textContent = th.dataset.col===sortCol ? (sortDir===1?'↑':'↓') : '↕';
+    th.querySelector('.sa').textContent = th.dataset.col===sortCol ? (sortDir===1?'up':'down') : 'sort';
   });
   const tbody = document.getElementById('tbody');
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-      <p>${data.length===0 ? 'Clique sur "Synchroniser" pour charger tes données' : 'Aucune candidature trouvée'}</p>
-    </div></td></tr>`;
+    tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><p>' + (data.length===0 ? 'Clique sur Synchroniser pour charger tes donnees' : 'Aucune candidature trouvee') + '</p></div></td></tr>';
     return;
   }
-  tbody.innerHTML = rows.map(r => {
-    const fmtDate = r.date ? new Date(r.date).toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'2-digit'}) : '—';
+  var html = '';
+  rows.forEach(function(r) {
+    var fmtDate = r.date ? new Date(r.date).toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'2-digit'}) : '--';
     if (pendingDeleteId===r.id) {
-      return `<tr class="confirm-row"><td colspan="9">
-        <div class="confirm-actions">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          Supprimer "${esc(r.entreprise)}" ?
-          <button class="btn btn-sm btn-danger" onclick="confirmDelete(${r.id})">Confirmer</button>
-          <button class="btn btn-sm" onclick="cancelDelete()">Annuler</button>
-        </div>
-      </td><td></td></tr>`;
+      html += '<tr class="confirm-row"><td colspan="9"><div class="confirm-actions">Supprimer "' + esc(r.entreprise) + '" ?<button class="btn btn-sm btn-danger" onclick="confirmDelete(' + r.id + ')">Confirmer</button><button class="btn btn-sm" onclick="cancelDelete()">Annuler</button></div></td><td></td></tr>';
+      return;
     }
-    const lien = r.lien ? `<a href="${esc(r.lien)}" target="_blank" class="link-icon" title="Voir l'offre">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>` : '<span style="color:#9e9d97">—</span>';
-    return `<tr>
-      <td style="font-weight:500"><span class="trunc" title="${esc(r.entreprise)}">${esc(r.entreprise)}</span></td>
-      <td><span class="trunc" title="${esc(r.poste)}">${esc(r.poste)}</span></td>
-      <td style="color:var(--text-muted)">${esc(r.ville||'—')}</td>
-      <td>${r.contrat?`<span class="badge b-contrat">${esc(r.contrat)}</span>`:'<span style="color:var(--text-muted)">—</span>'}</td>
-      <td style="color:var(--text-muted);font-family:'DM Mono',monospace;font-size:12px">${fmtDate}</td>
-      <td><span class="badge ${statusClass[r.statut]||'b-attente'}">${esc(r.statut)}</span></td>
-      <td style="color:var(--text-muted)"><span class="trunc" title="${esc(r.contact||'')}">${esc(r.contact||'—')}</span></td>
-      <td>${lien}</td>
-      <td style="color:var(--text-muted)"><span class="trunc" title="${esc(r.note||'')}">${esc(r.note||'—')}</span></td>
-      <td>
-        <button class="icon-btn" title="Modifier" onclick="editEntry(${r.id})">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        </button>
-        <button class="icon-btn del" title="Supprimer" onclick="askDelete(${r.id})">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
-        </button>
-      </td></tr>`;
-  }).join('');
+    var lien = r.lien ? '<a href="' + esc(r.lien) + '" target="_blank" class="link-icon">&#8599;</a>' : '<span style="color:#9e9d97">--</span>';
+    var contratBadge = r.contrat ? '<span class="badge b-contrat">' + esc(r.contrat) + '</span>' : '<span style="color:var(--text-muted)">--</span>';
+    var statutBadge = '<span class="badge ' + (statusClass[r.statut]||'b-attente') + '">' + esc(r.statut) + '</span>';
+    html += '<tr>';
+    html += '<td style="font-weight:500"><span class="trunc" title="' + esc(r.entreprise) + '">' + esc(r.entreprise) + '</span></td>';
+    html += '<td><span class="trunc" title="' + esc(r.poste) + '">' + esc(r.poste) + '</span></td>';
+    html += '<td style="color:var(--text-muted)">' + esc(r.ville||'--') + '</td>';
+    html += '<td>' + contratBadge + '</td>';
+    html += '<td style="color:var(--text-muted);font-family:monospace;font-size:12px">' + fmtDate + '</td>';
+    html += '<td>' + statutBadge + '</td>';
+    html += '<td style="color:var(--text-muted)"><span class="trunc">' + esc(r.contact||'--') + '</span></td>';
+    html += '<td>' + lien + '</td>';
+    html += '<td style="color:var(--text-muted)"><span class="trunc" title="' + esc(r.note||'') + '">' + esc(r.note||'--') + '</span></td>';
+    html += '<td><button class="icon-btn" onclick="editEntry(' + r.id + ')">&#9998;</button> <button class="icon-btn del" onclick="askDelete(' + r.id + ')">&#128465;</button></td>';
+    html += '</tr>';
+  });
+  tbody.innerHTML = html;
 }
- 
-function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 function askDelete(id) { pendingDeleteId=id; render(); }
 function cancelDelete() { pendingDeleteId=null; render(); }
 async function confirmDelete(id) {
-  data=data.filter(r=>r.id!==id); pendingDeleteId=null; render();
+  data=data.filter(function(r){return r.id!==id;}); pendingDeleteId=null; render();
   try { await writeAllRows(); } catch(e) { setStatus('red','Erreur sauvegarde'); }
 }
- 
+
 function openModal(id) {
   editId=id||null;
-  const m=id?data.find(r=>r.id===id):null;
+  var m=id?data.find(function(r){return r.id===id;}):null;
   document.getElementById('modal-title').textContent=id?'Modifier la candidature':'Nouvelle candidature';
-  ['entreprise','poste','ville','contrat','lien','contact','note'].forEach(f=>document.getElementById('f-'+f).value=m?m[f]:'');
+  ['entreprise','poste','ville','contrat','lien','contact','note'].forEach(function(f){document.getElementById('f-'+f).value=m?m[f]:'';});
   document.getElementById('f-date').value=m?m.date:new Date().toISOString().slice(0,10);
   document.getElementById('f-statut').value=m?m.statut:'En attente';
   document.getElementById('modal').classList.add('open');
-  setTimeout(()=>document.getElementById('f-entreprise').focus(),50);
+  setTimeout(function(){document.getElementById('f-entreprise').focus();},50);
 }
 function closeModal() { document.getElementById('modal').classList.remove('open'); }
 function editEntry(id) { openModal(id); }
- 
+
 async function saveEntry() {
-  const e=document.getElementById('f-entreprise').value.trim();
-  const p=document.getElementById('f-poste').value.trim();
+  var e=document.getElementById('f-entreprise').value.trim();
+  var p=document.getElementById('f-poste').value.trim();
   if(!e||!p) return;
-  const entry={id:editId||nextId++,entreprise:e,poste:p,ville:document.getElementById('f-ville').value.trim(),contrat:document.getElementById('f-contrat').value,lien:document.getElementById('f-lien').value.trim(),date:document.getElementById('f-date').value,statut:document.getElementById('f-statut').value,contact:document.getElementById('f-contact').value.trim(),note:document.getElementById('f-note').value.trim()};
-  if(editId) data=data.map(r=>r.id===editId?entry:r); else data.push(entry);
+  var entry={
+    id:editId||nextId++, entreprise:e, poste:p,
+    ville:document.getElementById('f-ville').value.trim(),
+    contrat:document.getElementById('f-contrat').value,
+    lien:document.getElementById('f-lien').value.trim(),
+    date:document.getElementById('f-date').value,
+    statut:document.getElementById('f-statut').value,
+    contact:document.getElementById('f-contact').value.trim(),
+    note:document.getElementById('f-note').value.trim()
+  };
+  if(editId) data=data.map(function(r){return r.id===editId?entry:r;}); else data.push(entry);
   closeModal(); render();
-  setStatus('amber','Sauvegarde…');
+  setStatus('amber','Sauvegarde...');
   try { await writeAllRows(); } catch(e) { setStatus('red','Erreur : '+e.message); }
 }
- 
-document.getElementById('modal').addEventListener('click', e => { if(e.target===document.getElementById('modal')) closeModal(); });
- 
+
+document.getElementById('modal').addEventListener('click', function(e) { if(e.target===document.getElementById('modal')) closeModal(); });
+
 syncAll();
 </script>
 </body>
