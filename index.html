@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --bg: #f5f4f0;
     --surface: #ffffff;
@@ -34,7 +34,7 @@
     --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
     --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
   }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -43,7 +43,7 @@
     font-size: 14px;
     line-height: 1.5;
   }
-
+ 
   header {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -56,7 +56,7 @@
     top: 0;
     z-index: 10;
   }
-
+ 
   .logo {
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
     font-size: 15px;
     color: var(--text);
   }
-
+ 
   .logo-icon {
     width: 28px;
     height: 28px;
@@ -77,13 +77,13 @@
     color: white;
     font-size: 14px;
   }
-
+ 
   .header-right {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
+ 
   .status-pill {
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@
     border-radius: 20px;
     border: 1px solid var(--border);
   }
-
+ 
   .dot {
     width: 6px;
     height: 6px;
@@ -106,34 +106,34 @@
   .dot-green { background: #22c55e; }
   .dot-red { background: #ef4444; }
   .dot-amber { background: #f59e0b; }
-
+ 
   main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-
+ 
   .page-header {
     margin-bottom: 1.5rem;
   }
-
+ 
   .page-title {
     font-size: 22px;
     font-weight: 500;
     color: var(--text);
     margin-bottom: 2px;
   }
-
+ 
   .page-sub {
     font-size: 13px;
     color: var(--text-muted);
   }
-
+ 
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     margin-bottom: 1.5rem;
   }
-
+ 
   @media (max-width: 700px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
-
+ 
   .stat-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -141,7 +141,7 @@
     padding: 1rem 1.25rem;
     box-shadow: var(--shadow);
   }
-
+ 
   .stat-label {
     font-size: 11px;
     color: var(--text-muted);
@@ -149,14 +149,14 @@
     letter-spacing: 0.05em;
     margin-bottom: 6px;
   }
-
+ 
   .stat-value {
     font-size: 26px;
     font-weight: 500;
     color: var(--text);
     font-family: 'DM Mono', monospace;
   }
-
+ 
   .toolbar {
     display: flex;
     gap: 10px;
@@ -164,13 +164,13 @@
     flex-wrap: wrap;
     align-items: center;
   }
-
+ 
   .search-wrap {
     position: relative;
     flex: 1;
     min-width: 200px;
   }
-
+ 
   .search-wrap svg {
     position: absolute;
     left: 10px;
@@ -179,7 +179,7 @@
     color: var(--text-faint);
     pointer-events: none;
   }
-
+ 
   input[type="text"], input[type="date"], select {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
@@ -192,16 +192,16 @@
     transition: border-color 0.15s;
     height: 36px;
   }
-
+ 
   input[type="text"]:focus, input[type="date"]:focus, select:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(45,90,61,0.08);
   }
-
+ 
   #search { padding-left: 32px; width: 100%; }
-
+ 
   select { cursor: pointer; }
-
+ 
   .btn {
     display: inline-flex;
     align-items: center;
@@ -219,30 +219,30 @@
     transition: background 0.12s, border-color 0.12s;
     white-space: nowrap;
   }
-
+ 
   .btn:hover { background: var(--surface2); }
   .btn:disabled { opacity: 0.5; cursor: not-allowed; }
-
+ 
   .btn-primary {
     background: var(--accent);
     color: white;
     border-color: var(--accent);
   }
   .btn-primary:hover { background: #245033; border-color: #245033; }
-
+ 
   .btn-sm {
     padding: 4px 10px;
     font-size: 12px;
     height: 28px;
   }
-
+ 
   .btn-danger {
     background: var(--danger-bg);
     color: var(--danger);
     border-color: rgba(155,44,44,0.2);
   }
   .btn-danger:hover { background: #fee2e2; }
-
+ 
   .table-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -250,16 +250,16 @@
     box-shadow: var(--shadow);
     overflow: hidden;
   }
-
+ 
   .table-wrap { overflow-x: auto; }
-
+ 
   table {
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
     min-width: 860px;
   }
-
+ 
   th {
     padding: 10px 14px;
     text-align: left;
@@ -274,19 +274,19 @@
     user-select: none;
     white-space: nowrap;
   }
-
+ 
   th:hover { color: var(--text); }
-
+ 
   td {
     padding: 10px 14px;
     border-bottom: 1px solid var(--border);
     color: var(--text);
     vertical-align: middle;
   }
-
+ 
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: var(--surface2); }
-
+ 
   .badge {
     display: inline-block;
     font-size: 11px;
@@ -295,7 +295,7 @@
     border-radius: 20px;
     white-space: nowrap;
   }
-
+ 
   .b-attente   { background: #f3f4f6; color: #374151; }
   .b-envoye    { background: var(--blue-bg); color: var(--blue); }
   .b-relance   { background: var(--amber-bg); color: var(--amber); }
@@ -303,7 +303,7 @@
   .b-accepte   { background: #dcfce7; color: #166534; }
   .b-refus     { background: var(--danger-bg); color: var(--danger); }
   .b-contrat   { background: var(--purple-bg); color: var(--purple); font-size: 10px; }
-
+ 
   .trunc {
     max-width: 140px;
     overflow: hidden;
@@ -312,7 +312,7 @@
     display: inline-block;
     vertical-align: middle;
   }
-
+ 
   .icon-btn {
     background: none;
     border: none;
@@ -326,9 +326,9 @@
   }
   .icon-btn:hover { background: var(--surface2); color: var(--text); }
   .icon-btn.del:hover { background: var(--danger-bg); color: var(--danger); }
-
+ 
   .confirm-row td { background: var(--danger-bg) !important; }
-
+ 
   .confirm-actions {
     display: flex;
     align-items: center;
@@ -337,20 +337,20 @@
     color: var(--danger);
     font-weight: 500;
   }
-
+ 
   .empty-state {
     text-align: center;
     padding: 3rem 1rem;
     color: var(--text-muted);
   }
-
+ 
   .empty-state svg { margin-bottom: 12px; opacity: 0.3; }
-
+ 
   .empty-state p { font-size: 14px; }
-
+ 
   .sa { margin-left: 4px; opacity: 0.35; }
   th.active .sa { opacity: 1; }
-
+ 
   /* Modal */
   .modal-overlay {
     display: none;
@@ -363,7 +363,7 @@
     backdrop-filter: blur(2px);
   }
   .modal-overlay.open { display: flex; }
-
+ 
   .modal {
     background: var(--surface);
     border-radius: var(--radius);
@@ -375,16 +375,16 @@
     max-height: 90vh;
     overflow-y: auto;
   }
-
+ 
   .modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.25rem;
   }
-
+ 
   .modal-title { font-size: 16px; font-weight: 500; }
-
+ 
   .modal-close {
     background: none;
     border: none;
@@ -395,7 +395,7 @@
     padding: 2px;
   }
   .modal-close:hover { color: var(--text); }
-
+ 
   .form-section {
     font-size: 11px;
     font-weight: 500;
@@ -406,9 +406,9 @@
     padding-bottom: 5px;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .form-row { margin-bottom: 12px; }
-
+ 
   .form-row label {
     display: block;
     font-size: 12px;
@@ -416,11 +416,11 @@
     color: var(--text-muted);
     margin-bottom: 4px;
   }
-
+ 
   .form-row input, .form-row select { width: 100%; }
-
+ 
   .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-
+ 
   .modal-footer {
     display: flex;
     gap: 8px;
@@ -429,13 +429,13 @@
     padding-top: 1rem;
     border-top: 1px solid var(--border);
   }
-
+ 
   .link-icon { color: var(--accent); font-size: 16px; text-decoration: none; }
   .link-icon:hover { opacity: 0.7; }
-
+ 
   .spin { display: inline-block; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
-
+ 
   @media (max-width: 600px) {
     main { padding: 1rem; }
     header { padding: 0 1rem; }
@@ -445,7 +445,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="logo">
     <div class="logo-icon">✦</div>
@@ -462,15 +462,15 @@
     </button>
   </div>
 </header>
-
+ 
 <main>
   <div class="page-header">
     <h1 class="page-title">Mes candidatures</h1>
     <p class="page-sub">Connecté à Google Sheets — toutes les modifications sont sauvegardées automatiquement</p>
   </div>
-
+ 
   <div class="stats-grid" id="stats"></div>
-
+ 
   <div class="toolbar">
     <div class="search-wrap">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
@@ -497,7 +497,7 @@
       Ajouter
     </button>
   </div>
-
+ 
   <div class="table-card">
     <div class="table-wrap">
       <table>
@@ -520,7 +520,7 @@
     </div>
   </div>
 </main>
-
+ 
 <!-- Modal -->
 <div class="modal-overlay" id="modal">
   <div class="modal">
@@ -528,7 +528,7 @@
       <span class="modal-title" id="modal-title">Nouvelle candidature</span>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
-
+ 
     <div class="form-section">Entreprise</div>
     <div class="form-grid">
       <div class="form-row"><label>Entreprise *</label><input id="f-entreprise" type="text" placeholder="Nom de l'entreprise"></div>
@@ -540,7 +540,7 @@
       </div>
       <div class="form-row"><label>Lien de l'offre</label><input id="f-lien" type="text" placeholder="https://…"></div>
     </div>
-
+ 
     <div class="form-section">Candidature</div>
     <div class="form-row"><label>Poste visé *</label><input id="f-poste" type="text" placeholder="Ex: Chargé de communication digital"></div>
     <div class="form-grid">
@@ -552,33 +552,33 @@
         </select>
       </div>
     </div>
-
+ 
     <div class="form-section">Infos complémentaires</div>
     <div class="form-row"><label>Contact (nom / email)</label><input id="f-contact" type="text" placeholder="Ex: Marie Dupont — m.dupont@…"></div>
     <div class="form-row"><label>Note</label><input id="f-note" type="text" placeholder="Remarques, suites…"></div>
-
+ 
     <div class="modal-footer">
       <button class="btn" onclick="closeModal()">Annuler</button>
       <button class="btn btn-primary" onclick="saveEntry()">Enregistrer</button>
     </div>
   </div>
 </div>
-
+ 
 <script>
 const API_KEY  = 'AIzaSyDif9oAg1mvNf7lODO2oZM_bB5lXdZd5XU';
-const SHEET_ID = '1fCrx5meH9EdPNrsjX3x93nLSpEPaK5sYo5bBrGi5sjo';
+const SHEET_ID = '1jqiH78wPEYYSUTcZvOM3XnEsf9ReJ6FB-kbJh4wOVHk';
 const TAB      = 'Candidatures';
 const COLS     = ['entreprise','poste','ville','contrat','date','statut','contact','lien','note'];
-
+ 
 let data = [], nextId = 1, sortCol = 'date', sortDir = -1, editId = null, pendingDeleteId = null;
-
+ 
 const statusClass = { "Envoyé":"b-envoye","Relancé":"b-relance","Entretien":"b-entretien","Refus":"b-refus","Accepté":"b-accepte","En attente":"b-attente" };
-
+ 
 function setStatus(color, msg) {
   document.getElementById('status-dot').className = 'dot dot-' + color;
   document.getElementById('status-msg').textContent = msg;
 }
-
+ 
 function setSyncBtn(loading) {
   const btn = document.getElementById('sync-btn');
   btn.disabled = loading;
@@ -586,11 +586,11 @@ function setSyncBtn(loading) {
     ? '<svg class="spin" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg> En cours…'
     : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg> Synchroniser';
 }
-
+ 
 function apiUrl(path, extra='') {
   return `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}${path}?key=${API_KEY}${extra}`;
 }
-
+ 
 async function ensureHeader() {
   const res = await fetch(apiUrl(`/values/${TAB}!A1:I1`));
   if (!res.ok) {
@@ -607,7 +607,7 @@ async function ensureHeader() {
     });
   }
 }
-
+ 
 async function fetchRows() {
   const res = await fetch(apiUrl(`/values/${TAB}!A2:I1000`));
   if (!res.ok) throw new Error('Impossible de lire les données');
@@ -620,7 +620,7 @@ async function fetchRows() {
   });
   render();
 }
-
+ 
 async function writeAllRows() {
   const rows = data.map(r => COLS.map(c => r[c]||''));
   await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${TAB}!A2:I1000:clear?key=${API_KEY}`, { method: 'POST' });
@@ -631,7 +631,7 @@ async function writeAllRows() {
   });
   setStatus('green', 'Synchronisé — ' + new Date().toLocaleTimeString('fr-FR'));
 }
-
+ 
 async function syncAll() {
   setSyncBtn(true);
   setStatus('amber', 'Connexion…');
@@ -644,12 +644,12 @@ async function syncAll() {
   }
   setSyncBtn(false);
 }
-
+ 
 function sortBy(col) {
   if (sortCol===col) sortDir*=-1; else { sortCol=col; sortDir=1; }
   render();
 }
-
+ 
 function filtered() {
   const q = document.getElementById('search').value.toLowerCase();
   const fs = document.getElementById('filterStatus').value;
@@ -662,7 +662,7 @@ function filtered() {
     return va<vb?-sortDir:va>vb?sortDir:0;
   });
 }
-
+ 
 function renderStats() {
   const c = {total:data.length,entretien:0,accepte:0,refus:0,encours:0};
   data.forEach(r => {
@@ -678,7 +678,7 @@ function renderStats() {
     <div class="stat-card"><div class="stat-label">Acceptées</div><div class="stat-value">${c.accepte}</div></div>
     <div class="stat-card"><div class="stat-label">Refus</div><div class="stat-value">${c.refus}</div></div>`;
 }
-
+ 
 function render() {
   renderStats();
   const rows = filtered();
@@ -729,7 +729,7 @@ function render() {
       </td></tr>`;
   }).join('');
 }
-
+ 
 function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function askDelete(id) { pendingDeleteId=id; render(); }
 function cancelDelete() { pendingDeleteId=null; render(); }
@@ -737,7 +737,7 @@ async function confirmDelete(id) {
   data=data.filter(r=>r.id!==id); pendingDeleteId=null; render();
   try { await writeAllRows(); } catch(e) { setStatus('red','Erreur sauvegarde'); }
 }
-
+ 
 function openModal(id) {
   editId=id||null;
   const m=id?data.find(r=>r.id===id):null;
@@ -750,7 +750,7 @@ function openModal(id) {
 }
 function closeModal() { document.getElementById('modal').classList.remove('open'); }
 function editEntry(id) { openModal(id); }
-
+ 
 async function saveEntry() {
   const e=document.getElementById('f-entreprise').value.trim();
   const p=document.getElementById('f-poste').value.trim();
@@ -761,9 +761,9 @@ async function saveEntry() {
   setStatus('amber','Sauvegarde…');
   try { await writeAllRows(); } catch(e) { setStatus('red','Erreur : '+e.message); }
 }
-
+ 
 document.getElementById('modal').addEventListener('click', e => { if(e.target===document.getElementById('modal')) closeModal(); });
-
+ 
 syncAll();
 </script>
 </body>
